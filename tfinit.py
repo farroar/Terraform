@@ -4,6 +4,11 @@
 This is a collection of functions that initializes a storage account in Azure
 to facilitate Terraform state storage.
 
+Credentials are pulled from environment varialbes set elsewhere.
+
+Once storage is setup, this can be used as the backend configuration element
+for Terraform in Azure
+
 Nathan Farrar - 27-Mar-2020
 ##############################################################################
 '''
