@@ -42,27 +42,26 @@ Each Terraform provider block will need to specify the 'auxiliary_tenant_ids' at
 Here is an example provider block for tenant 1:
 
 >provider "azurerm" {   
-  alias           = "tenant1"
-  
-  `version         = "=1.44.0"`
-  `subscription_id = "${var.tenant_1_subscription_id}"`
-  tenant_id       = "${var.tenant_id_1}"
-  client_id       = "${var.client_id_1}"
-  client_secret   = "${var.secret_1}"
-  auxiliary_tenant_ids = ["${var.tenant_id_2}"]
-}`
+  alias           = "tenant1"  
+  version         = "=1.44.0"  
+  subscription_id = "${var.tenant_1_subscription_id}"  
+  tenant_id       = "${var.tenant_id_1}"  
+  client_id       = "${var.client_id_1}"  
+  client_secret   = "${var.secret_1}"  
+  auxiliary_tenant_ids = ["${var.tenant_id_2}"]  
+}  
 
 Here is an example provider block for tenant 2:
 
-`provider "azurerm" {
-  alias           = "tenant2"
-  version         = "=1.44.0"
-  subscription_id = "${var.tenant_2_subscription_id}"
-  tenant_id       = "${var.tenant_id_2}"
-  client_id       = "${var.client_id_1}"
-  client_secret   = "${var.secret_1}"
-  auxiliary_tenant_ids = ["${var.tenant_id_1}"]
-}`
+>provider "azurerm" {  
+  alias           = "tenant2"  
+  version         = "=1.44.0"  
+  subscription_id = "${var.tenant_2_subscription_id}"  
+  tenant_id       = "${var.tenant_id_2}"  
+  client_id       = "${var.client_id_1}"  
+  client_secret   = "${var.secret_1}"  
+  auxiliary_tenant_ids = ["${var.tenant_id_1}"]  
+}  
 
 Notice that the 'auxiliary_tenant_ids' attribute has a list in which only the ***other*** tenant ID is listed. This will allow for additional mulit-tenancy if you like that kind of thing. :)
 
