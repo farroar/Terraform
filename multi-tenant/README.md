@@ -41,9 +41,8 @@ Each Terraform provider block will need to specify the 'auxiliary_tenant_ids' at
 
 Here is an example provider block for tenant 1:
 
-`provider "azurerm" {`
-
-  `alias           = "tenant1"`
+>provider "azurerm" {
+  alias           = "tenant1"
   
   `version         = "=1.44.0"`
   `subscription_id = "${var.tenant_1_subscription_id}"`
