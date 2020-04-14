@@ -22,7 +22,7 @@ level or at the subscription level. This example is at the subscription level.
 
 1. In a new private browser window (because of cookies and current login status), open the following URL filling in the pieces
 
- 'https://login.microsoftonline.com/<Tenant 2 ID>/oauth2/authorize?client_id=<Application (client) ID>&response_type=code&redirect_uri=https%3A%2F%2Fwww.microsoft.com%2F
+ `https://login.microsoftonline.com/<Tenant 2 ID>/oauth2/authorize?client_id=<Application (client) ID>&response_type=code&redirect_uri=https%3A%2F%2Fwww.microsoft.com%2F`
 
 You will be asked to authorize this application on behalf of your organization
 
