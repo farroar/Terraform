@@ -2,7 +2,7 @@
   {
     "module": {
       "t1-hub-to-t2-dev-peering": {
-        "source": "./modules/peering/multi-tenant",
+        "source": "./modules/peering",
         "vnet_names": [
           "tenant1-eastus2-hub-primary-vnet",
           "tenant2-eastus2-dev-primary-vnet"
