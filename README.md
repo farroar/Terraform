@@ -1,4 +1,5 @@
 # Terraform
 
-Various libraries built to help with automated Terraform deployments
-Testing
+Work with Terraform to automate infrastructure.
+
+This is broken up into various platforms with example modules and code used to test.
